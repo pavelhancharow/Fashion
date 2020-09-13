@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,CAAC,AAAC,CACA,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,UAAU,CAAG",
+    "mappings": "AEAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CAAG;;AAC3B,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,uBAAuB;EACpC,KAAK,EDNA,OAAO;CCMG",
     "sources": [
         "../sass/style.sass",
+        "../sass/_variables.sass",
         "../sass/_settings.sass"
     ],
     "names": [],

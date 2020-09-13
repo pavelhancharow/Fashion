@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'HKGrotesk-SemiBold';
-  src: url("HKGrotesk-SemiBold.woff") format("woff"), url("HKGrotesk-SemiBold.woff2") format("woff2");
+  src: url(../fonts/HKGrotesk-SemiBold.woff) format("woff"), url(../fonts/hk-grotesk.semibold.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'HKGrotesk-Bold';
-  src: url("HKGrotesk-Bold.woff") format("woff"), url("HKGrotesk-Bold.woff2") format("woff2");
+  src: url(../fonts/HKGrotesk-Bold.woff) format("woff"), url(../fonts/hk-grotesk.bold.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -129,6 +129,10 @@ body {
   width: 100%;
 }
 
+.hero {
+  padding-top: 34px;
+}
+
 .hero-wrapper {
   padding-top: 62px;
   padding-left: 107px;
@@ -136,10 +140,6 @@ body {
   height: 700px;
   background: #E8EAE9 url(../img/bg/hero-bg.jpg) center/cover;
   border-radius: 8px;
-}
-
-.hero-info {
-  width: 600px;
 }
 
 .hero-tag {
@@ -151,6 +151,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
   color: #36B37E;
   background-color: rgba(54, 179, 126, 0.1);
   border-radius: 2000px;
@@ -158,13 +159,15 @@ body {
 
 .hero-title {
   margin-bottom: 28px;
-  font-weight: bold;
+  max-width: 500px;
+  font-family: 'HKGrotesk-Bold';
   font-size: 56px;
   line-height: 68px;
   letter-spacing: 0.2px;
 }
 
 .hero-text {
+  max-width: 600px;
   margin-bottom: 52px;
   font-size: 20px;
   line-height: 36px;
@@ -192,6 +195,7 @@ body {
 }
 
 .hero-about__description {
+  font-family: 'HKGrotesk-SemiBold';
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;

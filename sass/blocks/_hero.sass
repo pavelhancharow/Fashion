@@ -1,4 +1,5 @@
 .hero
+  padding-top: 34px
   &-wrapper
     padding-top: 62px
     padding-left: 107px
@@ -6,8 +7,6 @@
     height: 700px
     background: $grey url(../img/bg/hero-bg.jpg) center / cover
     border-radius: 8px
-  &-info
-    width: 600px
   &-tag
     display: block
     max-width: 175px
@@ -17,16 +16,19 @@
     font-size: 14px
     line-height: 20px
     text-align: center
+    text-transform: uppercase
     color: $green
     background-color: rgba($green, 0.1)
     border-radius: 2000px
   &-title
     margin-bottom: 28px
-    font-weight: bold
+    max-width: 500px
+    font-family: 'HKGrotesk-Bold'
     font-size: 56px
     line-height: 68px
     letter-spacing: 0.2px
   &-text
+    max-width: 600px
     margin-bottom: 52px
     font-size: 20px
     line-height: 36px
@@ -46,6 +48,7 @@
   &-about
     display: flex
     &__description
+      font-family: 'HKGrotesk-SemiBold'
       font-weight: 600
       font-size: 16px
       line-height: 20px

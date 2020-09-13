@@ -19,6 +19,10 @@
           color: $light
           border-color: transparent
           background-color: rgba($blue, 0.5)
+  .hero
+    &-button
+      &:hover
+        background-color: #4E82AB
 @media ( max-width: 1200px )
   .container
     max-width: 960px
@@ -36,6 +40,33 @@
       display: none
     &-hamburger
       display: flex
+  .hero
+    padding-top: 22px
+    padding-bottom: 22px
+    &-wrapper
+      padding-top: 36px
+      padding-left: 28px
+      height: 624px
+      background-size: 175%
+      background-position-x: 65%
+      background-position-y: 25%
+    &-tag
+      margin-bottom: 24px
+    &-title
+      margin-bottom: 20px
+      max-width: 407px
+      font-size: 48px
+      line-height: 60px
+    &-text
+      margin-bottom: 36px
+      max-width: 400px
+      font-size: 18px
+      line-height: 32px
+    &-button
+      margin-bottom: 40px
+    &-about
+      &__group
+        margin-right: 20px
 @media ( max-width: 767px )
   .container
     max-width: 570px

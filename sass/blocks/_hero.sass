@@ -1,11 +1,16 @@
 .hero
   padding-top: 34px
+  padding-bottom: 26px
   &-wrapper
     padding-top: 62px
     padding-left: 107px
     width: 100%
     height: 700px
-    background: $grey url(../img/bg/hero-bg.jpg) center / cover
+    background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/bg/hero-bg.jpg)
+    background-color: $grey
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
     border-radius: 8px
   &-tag
     display: block
@@ -45,8 +50,26 @@
     color: $light
     background-color: $body
     border-radius: 8px
+    transition: all .3s
   &-about
     display: flex
+    &__group
+      margin-right: 30px
+      display: flex
+      align-items: center
+    &__radius
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 36px
+      height: 36px
+      margin-right: 8px
+      border: 1px solid rgba($blue, 0.75)
+      border-radius: 12px
+    &__img
+      width: 22px
+      height: 22px
+      border: 1px dashed #979797
     &__description
       font-family: 'HKGrotesk-SemiBold'
       font-weight: 600

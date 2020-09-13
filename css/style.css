@@ -131,6 +131,7 @@ body {
 
 .hero {
   padding-top: 34px;
+  padding-bottom: 26px;
 }
 
 .hero-wrapper {
@@ -138,7 +139,12 @@ body {
   padding-left: 107px;
   width: 100%;
   height: 700px;
-  background: #E8EAE9 url(../img/bg/hero-bg.jpg) center/cover;
+  background: -webkit-gradient(linear, right top, left top, color-stop(67.34%, rgba(238, 238, 238, 0.0001)), to(#E8EAE9)), url(../img/bg/hero-bg.jpg);
+  background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/bg/hero-bg.jpg);
+  background-color: #E8EAE9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 8px;
 }
 
@@ -186,12 +192,47 @@ body {
   color: #ffffff;
   background-color: #183B56;
   border-radius: 8px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .hero-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.hero-about__group {
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-about__radius {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  border: 1px solid rgba(21, 101, 216, 0.75);
+  border-radius: 12px;
+}
+
+.hero-about__img {
+  width: 22px;
+  height: 22px;
+  border: 1px dashed #979797;
 }
 
 .hero-about__description {
@@ -226,6 +267,9 @@ body {
     border-color: transparent;
     background-color: rgba(21, 101, 216, 0.5);
   }
+  .hero-button:hover {
+    background-color: #4E82AB;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -254,6 +298,39 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .hero {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .hero-wrapper {
+    padding-top: 36px;
+    padding-left: 28px;
+    height: 624px;
+    background-size: 175%;
+    background-position-x: 65%;
+    background-position-y: 25%;
+  }
+  .hero-tag {
+    margin-bottom: 24px;
+  }
+  .hero-title {
+    margin-bottom: 20px;
+    max-width: 407px;
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .hero-text {
+    margin-bottom: 36px;
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .hero-button {
+    margin-bottom: 40px;
+  }
+  .hero-about__group {
+    margin-right: 20px;
   }
 }
 

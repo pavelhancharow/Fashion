@@ -1,0 +1,49 @@
+.header
+  padding: 27px 0
+  &-wrapper
+    display: flex
+    align-items: center
+  &-logo
+    width: 91px
+    height: 28px
+  &-nav
+    display: flex
+    align-items: center
+    margin-left: auto
+    &__link
+      position: relative
+      margin-right: 42px
+      color: inherit
+    &__button
+      padding: 11px 23px
+      font-weight: 600
+      color: $blue
+      border: 2px solid $blue
+      border-radius: 8px
+      transition: all .3s
+  &-hamburger
+    display: none
+    width: 22px
+    height: 18px
+    margin-left: auto
+    flex-direction: column
+    justify-content: space-between
+    background-color: transparent
+    outline: none
+    border: none
+    &__line
+      height: 2px
+      width: 100%
+      background-color: $darkBlue
+      border-radius: 8px
+  &-mobile
+    display: none
+    position: fixed
+    top: 62px
+    left: 0
+    right: 0
+    bottom: 0
+    &__nav
+      display: flex
+      flex-direction: column
+      width: 100%

@@ -5,24 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fashion Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
-      <a href="index.html" class="header-logo">
-        <img src="img/svg/logo.svg" alt="image: logo" class="header-logo__img">
-      </a>
-      <nav class="header-nav">
-        <a href="#" class="header-link">Home</a>
-        <a href="#" class="header-link">Landings</a>
-        <a href="#" class="header-link">Pages</a>
-        <a href="#" class="header-link">Docs</a>
-        <a href="#" class="header-link">Help</a>
-        <a href="#" class="header-button">Get it now</a>
-      </nav>
+    <div class="container-2">
+      <div class="header-wrapper">
+        <a href="index.html" class="header-logo">
+          <img src="img/svg/logo.svg" alt="image: logo" class="header-logo__img">
+        </a>
+        <nav class="header-nav">
+          <a href="#" class="header-nav__link">Home</a>
+          <a href="#" class="header-nav__link">Landings</a>
+          <a href="#" class="header-nav__link">Pages</a>
+          <a href="#" class="header-nav__link">Docs</a>
+          <a href="#" class="header-nav__link">Help</a>
+          <a href="#" class="header-nav__button">Get it now</a>
+        </nav>
+        <button class="header-hamburger">
+          <span class="header-hamburger__line"></span>
+          <span class="header-hamburger__line"></span>
+          <span class="header-hamburger__line"></span>
+        </button>
+      </div>
+      <!-- /.header-wrapper -->
+      <div class="header-mobile">
+        <nav class="header-nav header-mobile__nav">
+          <a href="#" class="header-nav__link">Home</a>
+          <a href="#" class="header-nav__link">Landings</a>
+          <a href="#" class="header-nav__link">Pages</a>
+          <a href="#" class="header-nav__link">Docs</a>
+          <a href="#" class="header-nav__link">Help</a>
+          <a href="#" class="header-nav__button">Get it now</a>
+        </nav>
+      </div>
+      <!-- /.header-mobile -->
     </div>
     <!-- /.container -->
   </header>

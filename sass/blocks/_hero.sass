@@ -54,9 +54,10 @@
   &-about
     display: flex
     &__group
-      margin-right: 30px
       display: flex
       align-items: center
+      &:not(:last-child)
+        margin-right: 30px
     &__radius
       display: flex
       align-items: center
@@ -64,7 +65,7 @@
       width: 36px
       height: 36px
       margin-right: 8px
-      border: 1px solid rgba($blue, 0.75)
+      border: 0.75px solid rgba($blue, 0.2)
       border-radius: 12px
     &__img
       width: 22px

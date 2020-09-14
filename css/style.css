@@ -100,11 +100,12 @@ body {
   background-color: transparent;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .header-hamburger__line {
   height: 2px;
-  width: 100%;
+  width: inherit;
   background-color: #3A4C66;
   border-radius: 8px;
 }

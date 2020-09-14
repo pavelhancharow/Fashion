@@ -81,21 +81,33 @@
   </section>
   <!-- /.hero -->
   <section class="collection">
-    <div class="container-2">
-      <img src="img/base/base-1.jpg" alt="image: " class="collection-img">
-      <img src="img/base/base-2.jpg" alt="image:" class="collection-img">
-      <img src="img/base/base-3.jpg" alt="image:" class="collection-img">
-      <div class="collection-new">
-        <h3 class="collection-title">New Winter Collectio</h3>
-        <p class="collection-text">Now is Winter Season. Like the season, we choose some outfit and clothes based on
-          Winter season. You can see more this collection by click See More button on below. Let’s buy Our Collection
-          before all they’re gone. Use EHYA20 to get 20% Disc. </p>
-        <a href="#" class="collection-link">
-          Check Our Collection
-          <img src="img/svg/arrow-right.svg" alt="icon: arrow right">
-        </a>
+    <div class="container-2 collection-container">
+      <div class="collection-wrapper">
+        <div class="collection-pic">
+          <img src="img/base/base-1.jpg" alt="image: girl" class="collection-img collection-img__base">
+          <div class="collection-pic__block">
+            <img src="img/base/base-2.jpg" alt="image: cafe" class="collection-img collection-img__base_block">
+            <img src="img/base/base-3.jpg" alt="image: home" class="collection-img collection-img__base_block">
+          </div>
+        </div>
+        <div class="collection-new">
+          <h3 class="collection-new__title">New Winter Collection</h3>
+          <p class="collection-new__text">Now is Winter Season. Like the season, we&nbsp;choose some outfit and clothes
+            based
+            on
+            Winter season. You can see more this collection by click See More button on below. Let’s buy Our Collection
+            before all they’re gone. Use EHYA20 to get 20% Disc.</p>
+          <a href="#" class="collection-link collection-hov">
+            Check Our Collection
+            <!-- <img src="img/svg/arrow-right.svg" alt="icon: arrow right" class="collection-link__img"> -->
+            <svg class="collection-link__img collection-hov">
+              <use xlink:href="img/svg/arrow-right.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- /.collection-new -->
       </div>
-      <!-- /.collection-new -->
+      <!-- /.collection-wrapper -->
     </div>
     <!-- /.container-2 -->
   </section>

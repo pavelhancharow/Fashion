@@ -67,6 +67,17 @@
         margin-bottom: 20px
     &-link
       justify-content: flex-end
+  .trending
+    padding-top: 60px
+    &-container
+      max-width: 960px
+    &-block
+      padding-left: 0px
+    &-card
+      width: 230px
+      margin-bottom: 48px
+    &-more
+      width: 230px
 @media ( max-width: 992px )
   .container
     max-width: 840px
@@ -82,6 +93,21 @@
       padding-left: 50px
     &-text
       max-width: 517px
+  .trending
+    padding-top: 40px
+    padding-bottom: 15px
+    &-container
+      max-width: 608px
+    &-header
+      flex-direction: column
+      margin-bottom: 54px
+      &__title
+        margin-bottom: 28px
+      &__list
+        margin-left: 0
+    &-card,
+    &-more
+      width: 280px
 @media ( max-width: 850px )
   .container
     max-width: 728px
@@ -153,6 +179,12 @@
   .collection
     &-container
       max-width: 93%
+  .trending
+    &-container
+      max-width: 540px
+    &-card,
+    &-more
+      width: 260px
 @media ( max-width: 700px )
   .collection
     &-pic
@@ -189,6 +221,14 @@
         font-size: 18px
         line-height: 32px
         text-align: justify
+  .trending
+    &-container
+      max-width: 96%
+    &-block
+      justify-content: space-evenly
+    &-card,
+    &-more
+      width: 230px
 @media ( max-width: 555px )
   .hero
     &-wrapper
@@ -207,6 +247,11 @@
     &-text
       text-align: center
       max-width: 400px
+@media ( max-width: 520px )
+  .trending
+    &-card,
+    &-more
+      width: 220px
 @media ( max-width: 490px )
   .collection
     &-img
@@ -214,6 +259,12 @@
         height: 300px
         &_block
           height: 140px
+  .trending
+    &-block
+      justify-content: space-between
+    &-card,
+    &-more
+      width: 200px
 @media ( max-width: 425px )
   .container-2
     max-width: 85%
@@ -276,6 +327,54 @@
         line-height: 38px
       &__text
         text-align: left
+  .trending
+    padding-top: 34px
+    padding-bottom: 10px
+    &-container
+      max-width: 95%
+    &-header
+      margin-bottom: 36px
+      &__title
+        margin-bottom: 22px
+        font-size: 28px
+        line-height: 36px
+      &__item
+        font-size: 16px
+        line-height: 22px
+        &:not(:last-child)
+          margin-right: 16px
+    &-card
+      width: 115px
+      height: 260px
+      margin-bottom: 20px
+      &__img
+        height: 200px
+        margin-bottom: 15px
+    &-description
+      padding: 0
+      &__title
+        font-size: 15px
+        line-height: 18px
+        margin-bottom: 0
+      &__price
+        font-size: 14px
+        line-height: 24px
+        &_img
+          width: 14px
+          height: 32px
+          margin-left: 9px
+    &-more
+      flex-basis: 65%
+      width: 140px
+      height: 200px
+      padding-bottom: 29px
+      &__img
+        width: 25px
+        height: 32px
+        margin-bottom: 21px
+      &__title
+        font-size: 20px
+        line-height: 24px
 @media ( max-width: 375px )
   .hero
     &-title
@@ -318,6 +417,15 @@
     &-link
       font-size: 16px
       line-height: 22px
+  .trending
+    &-card
+      width: 150px
+    &-description
+      &__title
+        font-size: 16px
+    &-more
+      flex-basis: auto
+      width: 150px
 @media ( max-width: 320px )
   .hero
     &-wrapper
@@ -340,3 +448,14 @@
       &__text
         max-width: 280px
         margin-bottom: 24px
+  .trending
+    &-container
+      max-width: 91%
+    &-card
+      width: 140px
+      height: 234px
+      &__img
+        height: 170px
+    &-more
+      width: 140px
+      height: 170px

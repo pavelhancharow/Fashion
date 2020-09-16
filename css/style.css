@@ -506,6 +506,18 @@ body {
   letter-spacing: 0.2px;
 }
 
+.testimonial-card__img {
+  width: 80px;
+  height: 92px;
+}
+
+.testimonial-card__text {
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.133333px;
+}
+
 @media (min-width: 993px) {
   .header-nav__link::after {
     content: "";

@@ -108,6 +108,10 @@
     &-card,
     &-more
       width: 280px
+  .testimonial
+    &-card
+      &__text
+        max-width: 700px
 @media ( max-width: 850px )
   .container
     max-width: 728px
@@ -165,6 +169,16 @@
         text-align: left
     &-link
       justify-content: start
+  .testimonial
+    padding-top: 17px
+    &-card
+      &__img
+        margin-bottom: 12px
+      &__text
+        margin-bottom: 36px
+        max-width: 630px
+      &__author
+        margin-bottom: 56px
 @media ( max-width: 767px )
   .container
     max-width: 100%
@@ -185,6 +199,10 @@
     &-card,
     &-more
       width: 260px
+  .testimonial
+    &-card
+      &__text
+        max-width: 100%
 @media ( max-width: 700px )
   .collection
     &-pic
@@ -375,6 +393,29 @@
       &__title
         font-size: 20px
         line-height: 24px
+  .testimonial
+    padding-top: 18px
+    padding-bottom: 20px
+    &-card
+      &__img
+        width: 70px
+        height: 81px
+        margin-bottom: 14px
+      &__text
+        margin-bottom: 24px
+        font-size: 18px
+        line-height: 36px
+        letter-spacing: 0.12px
+      &__author
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        max-width: 163px
+        margin-bottom: 43px
+        font-size: 20px
+        line-height: 24px
+        &_dash
+          display: inline
 @media ( max-width: 375px )
   .hero
     &-title

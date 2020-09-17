@@ -89,6 +89,22 @@
       margin-bottom: 48px
     &-more
       width: 230px
+  .stories
+    &-container
+      max-width: 960px
+    &-wrapper
+      padding-top: 100px
+    &-about
+      margin-right: auto
+      max-width: 318px
+    &-swiper
+      width: 598px
+    &-item
+      width: 290px
+      &__img
+        width: 280px
+    &-description
+      width: 280px
 @media ( max-width: 992px )
   .container
     max-width: 840px
@@ -123,6 +139,38 @@
     &-card
       &__text
         max-width: 700px
+  .stories
+    &-container
+      max-width: 720px
+    &-wrapper
+      padding-top: 80px
+      flex-direction: column
+      align-items: center
+    &-about
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-right: 0
+      margin-bottom: 35px
+      max-width: 510px
+      &__tag
+        margin-bottom: 25px
+      &__title
+        margin-bottom: 15px
+      &__text
+        margin-bottom: 36px
+        text-align: center
+    &-swiper
+      width: 682px
+    &-list
+      margin-top: 0
+    &-item
+      width: 332px
+      &__img
+        width: 322px
+    &-description
+      width: 322px
+      padding-right: 42px
 @media ( max-width: 850px )
   .container
     max-width: 728px
@@ -214,6 +262,18 @@
     &-card
       &__text
         max-width: 100%
+  .stories
+    &-wrapper
+      padding-top: 60px
+    &-swiper
+      width: 550px
+    &-item
+      width: 266px
+      &__img
+        width: 256px
+    &-description
+      width: 256px
+      padding-right: 20px
 @media ( max-width: 700px )
   .collection
     &-pic
@@ -258,6 +318,43 @@
     &-card,
     &-more
       width: 230px
+  .stories
+    &-container
+      max-width: 95%
+    &-wrapper
+      padding-top: 50px
+    &-about
+      max-width: 390px
+      &__tag
+        margin-bottom: 25px
+      &__title
+        font-size: 32px
+        line-height: 40px
+      &__text
+        font-size: 18px
+        line-height: 30px
+    &-button
+      width: 52px
+      height: 52px
+    &-swiper
+      width: 75%
+    &-list
+      width: 100%
+      &__block
+        flex-direction: column
+    &-item
+      width: 100%
+      height: 458px
+      &:first-child
+        margin-right: 0
+        margin-bottom: 24px
+      &__img
+        width: 95%
+        height: 406px
+    &-description
+      width: 95%
+      height: 150px
+      padding-right: 32px
 @media ( max-width: 555px )
   .hero
     &-wrapper
@@ -294,6 +391,10 @@
     &-card,
     &-more
       width: 200px
+  .stories
+    &-item
+      &__img
+        height: 327px
 @media ( max-width: 425px )
   .container-2
     max-width: 85%
@@ -421,12 +522,58 @@
         display: flex
         flex-wrap: wrap
         justify-content: center
-        max-width: 163px
+        max-width: 177px
         margin-bottom: 43px
         font-size: 20px
         line-height: 24px
         &_dash
           display: inline
+  .stories
+    padding-top: 29px
+    padding-bottom: 32px
+    &-container
+      max-width: 92%
+    &-wrapper
+      padding-top: 47px
+    &-about
+      max-width: 100%
+      margin-bottom: 25px
+      &__tag
+        padding: 2px 12px
+        margin-bottom: 26px
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__text
+        font-size: 16px
+        line-height: 28px
+      &__button
+        width: 111px
+    &-button
+      width: 48px
+      height: 48px
+    &-swiper
+      width: 96%
+    &-list
+      width: 100%
+      &__block
+        flex-direction: column
+    &-item
+      width: 100%
+      &:first-child
+        margin-right: 0
+        margin-bottom: 24px
+      &__img
+        width: 95%
+    &-description
+      width: 95%
+      padding-right: 24px
+      &__text
+        font-size: 21px
+        line-height: 26px
+      &__button
+        font-size: 18px
+        line-height: 24px
 @media ( max-width: 375px )
   .hero
     &-title
@@ -478,6 +625,13 @@
     &-more
       flex-basis: auto
       width: 150px
+  .stories
+    &-item
+      height: 428px
+      &__img
+        height: 307px
+    &-description
+      height: 150px
 @media ( max-width: 320px )
   .hero
     &-wrapper
@@ -511,3 +665,17 @@
     &-more
       width: 140px
       height: 170px
+  .stories
+    &-description
+      padding-right: 10px
+      padding-left: 15px
+      &__text
+        font-size: 20px
+        line-height: 24px
+      &__button
+        font-size: 16px
+        line-height: 22px
+    &-item
+      height: 407px
+      &__img
+        height: 277px

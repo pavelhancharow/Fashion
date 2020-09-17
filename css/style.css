@@ -587,10 +587,6 @@ body {
   border-top: 1px solid #E5EAF4;
 }
 
-.stories-swiper {
-  width: 662px;
-}
-
 .stories-about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -658,11 +654,21 @@ body {
   fill: #959EAD;
 }
 
+.stories-swiper {
+  width: 662px;
+}
+
 .stories-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
+}
+
+.stories-list__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .stories-item {
@@ -672,6 +678,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+}
+
+.stories-item:first-child {
+  margin-right: 18px;
 }
 
 .stories-item__img {
@@ -832,6 +842,28 @@ body {
   .trending-more {
     width: 230px;
   }
+  .stories-container {
+    max-width: 960px;
+  }
+  .stories-wrapper {
+    padding-top: 100px;
+  }
+  .stories-about {
+    margin-right: auto;
+    max-width: 318px;
+  }
+  .stories-swiper {
+    width: 598px;
+  }
+  .stories-item {
+    width: 290px;
+  }
+  .stories-item__img {
+    width: 280px;
+  }
+  .stories-description {
+    width: 280px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -876,6 +908,60 @@ body {
   }
   .testimonial-card__text {
     max-width: 700px;
+  }
+  .stories-container {
+    max-width: 720px;
+  }
+  .stories-wrapper {
+    padding-top: 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .stories-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+    margin-bottom: 35px;
+    max-width: 510px;
+  }
+  .stories-about__tag {
+    margin-bottom: 25px;
+  }
+  .stories-about__title {
+    margin-bottom: 15px;
+  }
+  .stories-about__text {
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .stories-swiper {
+    width: 682px;
+  }
+  .stories-list {
+    margin-top: 0;
+  }
+  .stories-item {
+    width: 332px;
+  }
+  .stories-item__img {
+    width: 322px;
+  }
+  .stories-description {
+    width: 322px;
+    padding-right: 42px;
   }
 }
 
@@ -996,6 +1082,22 @@ body {
   .testimonial-card__text {
     max-width: 100%;
   }
+  .stories-wrapper {
+    padding-top: 60px;
+  }
+  .stories-swiper {
+    width: 550px;
+  }
+  .stories-item {
+    width: 266px;
+  }
+  .stories-item__img {
+    width: 256px;
+  }
+  .stories-description {
+    width: 256px;
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1052,6 +1154,59 @@ body {
   .trending-card, .trending-more {
     width: 230px;
   }
+  .stories-container {
+    max-width: 95%;
+  }
+  .stories-wrapper {
+    padding-top: 50px;
+  }
+  .stories-about {
+    max-width: 390px;
+  }
+  .stories-about__tag {
+    margin-bottom: 25px;
+  }
+  .stories-about__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .stories-about__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .stories-button {
+    width: 52px;
+    height: 52px;
+  }
+  .stories-swiper {
+    width: 75%;
+  }
+  .stories-list {
+    width: 100%;
+  }
+  .stories-list__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .stories-item {
+    width: 100%;
+    height: 458px;
+  }
+  .stories-item:first-child {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .stories-item__img {
+    width: 95%;
+    height: 406px;
+  }
+  .stories-description {
+    width: 95%;
+    height: 150px;
+    padding-right: 32px;
+  }
 }
 
 @media (max-width: 555px) {
@@ -1103,6 +1258,9 @@ body {
   }
   .trending-card, .trending-more {
     width: 200px;
+  }
+  .stories-item__img {
+    height: 327px;
   }
 }
 
@@ -1277,13 +1435,80 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    max-width: 163px;
+    max-width: 177px;
     margin-bottom: 43px;
     font-size: 20px;
     line-height: 24px;
   }
   .testimonial-card__author_dash {
     display: inline;
+  }
+  .stories {
+    padding-top: 29px;
+    padding-bottom: 32px;
+  }
+  .stories-container {
+    max-width: 92%;
+  }
+  .stories-wrapper {
+    padding-top: 47px;
+  }
+  .stories-about {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .stories-about__tag {
+    padding: 2px 12px;
+    margin-bottom: 26px;
+  }
+  .stories-about__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .stories-about__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .stories-about__button {
+    width: 111px;
+  }
+  .stories-button {
+    width: 48px;
+    height: 48px;
+  }
+  .stories-swiper {
+    width: 96%;
+  }
+  .stories-list {
+    width: 100%;
+  }
+  .stories-list__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .stories-item {
+    width: 100%;
+  }
+  .stories-item:first-child {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .stories-item__img {
+    width: 95%;
+  }
+  .stories-description {
+    width: 95%;
+    padding-right: 24px;
+  }
+  .stories-description__text {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .stories-description__button {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -1363,6 +1588,15 @@ body {
         flex-basis: auto;
     width: 150px;
   }
+  .stories-item {
+    height: 428px;
+  }
+  .stories-item__img {
+    height: 307px;
+  }
+  .stories-description {
+    height: 150px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1403,6 +1637,24 @@ body {
   .trending-more {
     width: 140px;
     height: 170px;
+  }
+  .stories-description {
+    padding-right: 10px;
+    padding-left: 15px;
+  }
+  .stories-description__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .stories-description__button {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .stories-item {
+    height: 407px;
+  }
+  .stories-item__img {
+    height: 277px;
   }
 }
 /*# sourceMappingURL=style.css.map */

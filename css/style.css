@@ -903,11 +903,11 @@ body {
 .footer-social__logo {
   width: 90px;
   height: 28px;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .footer-social__description {
-  width: 186px;
+  width: 213px;
   margin-bottom: 32px;
   font-size: 16px;
   line-height: 28px;
@@ -1345,7 +1345,7 @@ body {
     margin-right: 0px;
   }
   .footer-list:nth-of-type(odd) {
-    margin-right: 28px;
+    margin-right: 39px;
   }
   .footer-copyright {
     margin-top: 13px;
@@ -1667,7 +1667,7 @@ body {
     line-height: 44px;
   }
   .subscribe-form {
-    width: 100%;
+    max-width: 100%;
   }
   .subscribe-form__subscribe {
     width: 113px;

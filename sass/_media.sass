@@ -52,6 +52,11 @@
       &__button
         &:hover
           color: #073D8C
+  .subscribe
+    &-form
+      &__subscribe
+        &:hover
+          background-color: #4E82AB
 @media ( max-width: 1200px )
   .container
     max-width: 960px
@@ -90,6 +95,7 @@
     &-more
       width: 230px
   .stories
+    padding-bottom: 60px
     &-container
       max-width: 960px
     &-wrapper
@@ -105,6 +111,19 @@
         width: 280px
     &-description
       width: 280px
+  .subscribe
+    padding-top: 55px
+    padding-bottom: 60px
+    &-wrapper
+      padding-top: 74px
+      padding-bottom: 80px
+      flex-direction: column
+      align-items: center
+    &-info
+      text-align: center
+      margin-bottom: 56px
+    &-form
+      margin: 0
 @media ( max-width: 992px )
   .container
     max-width: 840px
@@ -140,6 +159,7 @@
       &__text
         max-width: 700px
   .stories
+    padding-bottom: 40px
     &-container
       max-width: 720px
     &-wrapper
@@ -171,6 +191,8 @@
     &-description
       width: 322px
       padding-right: 42px
+  .subscribe
+    padding-top: 40px
 @media ( max-width: 850px )
   .container
     max-width: 728px
@@ -355,6 +377,22 @@
       width: 95%
       height: 150px
       padding-right: 32px
+  .subscribe
+    padding-bottom: 32px
+    &-wrapper
+      padding-top: 64px
+      padding-bottom: 64px
+    &-info
+      max-width: 100%
+      &__title
+        font-size: 36px
+        line-height: 44px
+    &-form
+      width: 100%
+      &__subscribe
+        width: 113px
+    &-input
+      max-width: 100%
 @media ( max-width: 555px )
   .hero
     &-wrapper
@@ -574,6 +612,41 @@
       &__button
         font-size: 18px
         line-height: 24px
+  .subscribe
+    padding-top: 33px
+    &-wrapper
+      padding-top: 66px
+      padding-bottom: 64px
+    &-info
+      margin-bottom: 36px
+      &__title
+        margin-bottom: 22px
+        font-size: 28px
+        line-height: 36px
+      &__subtitle
+        font-size: 16px
+        line-height: 28px
+    &-form
+      display: flex
+      flex-direction: column
+      &__subscribe
+        top: 0
+        left: 0
+        transform: translateY(0)
+        position: relative
+        width: 100%
+        border-radius: 8px
+    &-input
+      height: 48px
+      margin-bottom: 10px
+      &__email
+        font-size: 16px
+        line-height: 22px
+        padding-right: 10px
+        &:placeholder
+          font-size: 16px
+          line-height: 22px
+
 @media ( max-width: 375px )
   .hero
     &-title

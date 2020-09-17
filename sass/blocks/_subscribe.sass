@@ -1,0 +1,86 @@
+.subscribe
+  padding-top: 70px
+  padding-bottom: 64px
+  &-bg
+    background-image: url('../img/svg/subscribe-bg.svg')
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+  &-wrapper
+    display: flex
+    align-items: center
+    padding-top: 102px
+    padding-bottom: 100px
+  &-info
+    display: flex
+    flex-direction: column
+    max-width: 486px
+    &__title
+      margin-bottom: 12px
+      font-family: 'HKGrotesk-Bold'
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      color: $light
+    &__subtitle
+      font-size: 18px
+      line-height: 32px
+      color: $light
+  &-form
+    margin-left: auto
+    margin-right: 64px
+    position: relative
+    &__subscribe
+      width: 143px
+      height: 48px
+      position: absolute
+      top: 50%
+      right: 4px
+      font-weight: 600
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+      border-radius: 4px
+      background-color: $body
+      color: #FFFFFF
+      outline: none
+      border: none
+      cursor: pointer
+      transform: translateY(-50%)
+      transition: all .3s
+  &-input
+    height: 56px
+    width: 447px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 20px
+      width: 16px
+      height: 18px
+      background-image: url(../img/svg/mail.svg)
+      background-repeat: no-repeat
+      background-position: center
+      transform: translateY(-50%)
+      z-index: 5
+    &__email
+      position: absolute
+      width: 100%
+      height: 100%
+      padding-left: 48px
+      padding-right: 157px
+      top: 0
+      left: 0
+      font-size: 16px
+      line-height: 22px
+      color: #959EAD
+      background-color: $light
+      border: 1px solid #C3CAD9
+      border-radius: 8px
+      overflow: hidden
+      outline: none
+      &::placeholder
+        font-size: 16px
+        line-height: 22px
+        color: #959EAD

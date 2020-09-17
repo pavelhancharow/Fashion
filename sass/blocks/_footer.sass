@@ -1,0 +1,80 @@
+.footer
+  padding-top: 64px
+  padding-bottom: 80px
+  &-container
+    margin: 0 auto
+    max-width: 1140px
+  &-wrapper
+    display: flex
+  &-social
+    display: flex
+    flex-direction: column
+    margin-right: 79px
+    &__logo
+      width: 90px
+      height: 28px
+      margin-bottom: 28px
+    &__description
+      width: 186px
+      margin-bottom: 32px
+      font-size: 16px
+      line-height: 28px
+      color: $lightGrey
+    &__icons
+      display: flex
+    &__link
+      width: 42px
+      height: 40px
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      background-color: rgba($lightGrey, 0.1)
+      transition: all .3s
+      &:not(:last-child)
+        margin-right: 6px
+    &__icon
+      width: 16px
+      height: 18px
+      fill: $lightGrey
+      transition: all .3s
+  &-nav
+    display: flex
+  &-list
+    width: 165px
+    list-style: none
+    &:not(:last-of-type)
+      margin-right: 30px
+    &__title
+      margin-bottom: 31px
+      font-weight: 700
+      font-size: 18px
+      line-height: 25px
+  &-item
+    &:not(:last-of-type)
+      margin-bottom: 24px
+    &__link
+      color: inherit
+      transition: all .3s
+  &-copyright
+    margin-top: 96px
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__radius
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-bottom: 25px
+      width: 56px
+      height: 56px
+      background-color: $blue
+      border-radius: 50%
+    &__img
+      width: 24px
+      height: 28px
+    &__text
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $lightGrey

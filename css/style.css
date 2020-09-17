@@ -31,6 +31,7 @@
 }
 
 body {
+  padding-top: 103px;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -51,6 +52,12 @@ body {
 
 .header {
   padding: 27px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: #ffffff;
 }
 
 .header-wrapper {
@@ -1346,6 +1353,9 @@ body {
 }
 
 @media (max-width: 850px) {
+  body {
+    padding-top: 81px;
+  }
   .container {
     max-width: 728px;
   }
@@ -1737,6 +1747,9 @@ body {
 }
 
 @media (max-width: 425px) {
+  body {
+    padding-top: 63px;
+  }
   .container-2 {
     max-width: 85%;
   }

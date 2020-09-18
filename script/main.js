@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  var hamburgerMenu = $('.header-hamburger');
+  hamburgerMenu.on('click', function () {
+    var hamburgerLine = $('.header-hamburger__line');
+    var mobileMenu = $('.header-mobile');
+    $(hamburgerLine).toggleClass('header-hamburger__open');
+    $(mobileMenu).toggleClass('header-mobile__visible');
+  });
+
   var testimonialSwiper = new Swiper('.testimonial-swiper', {
     loop: true,
     speed: 300,

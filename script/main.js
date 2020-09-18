@@ -7,6 +7,12 @@ $(document).ready(function () {
     $(mobileMenu).toggleClass('header-mobile__visible');
   });
 
+  var trendingActive = $('.trending-header__item');
+  trendingActive.on('click', function () {
+    $(trendingActive).removeClass('trending-header__item_active');
+    $(this).toggleClass('trending-header__item_active');
+  });
+
   var testimonialSwiper = new Swiper('.testimonial-swiper', {
     loop: true,
     speed: 300,

@@ -856,6 +856,10 @@ body {
   max-width: 486px;
 }
 
+.subscribe-info__container {
+  max-width: 100%;
+}
+
 .subscribe-info__title {
   margin-bottom: 12px;
   font-family: 'HKGrotesk-Bold';
@@ -869,6 +873,26 @@ body {
   font-size: 18px;
   line-height: 32px;
   color: #ffffff;
+}
+
+.subscribe-info__subscribe {
+  color: #183B56;
+}
+
+.subscribe-info__button {
+  margin-top: 30px;
+  display: block;
+  max-width: 233px;
+  padding: 16px 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #183B56;
+  border-radius: 8px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .subscribe-form {
@@ -1198,6 +1222,9 @@ body {
   .stories-description__button:hover {
     color: #073D8C;
   }
+  .subscribe-info__button:hover {
+    background-color: #4E82AB;
+  }
   .subscribe-form__subscribe:hover {
     background-color: #4E82AB;
   }
@@ -1314,6 +1341,18 @@ body {
   .subscribe-info {
     text-align: center;
     margin-bottom: 56px;
+  }
+  .subscribe-info__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .subscribe-form {
     margin: 0;

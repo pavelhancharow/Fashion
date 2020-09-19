@@ -11,6 +11,9 @@ $(document).ready(function () {
   trendingActive.on('click', function () {
     $(trendingActive).removeClass('trending-header__item_active');
     $(this).toggleClass('trending-header__item_active');
+    var cardTarget = $(this).attr('data-target');
+    $('.trending-block').removeClass('trending-block__visible');
+    $(cardTarget).toggleClass('trending-block__visible');
   });
 
   var testimonialSwiper = new Swiper('.testimonial-swiper', {

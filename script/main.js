@@ -52,4 +52,38 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
   });
+  //validation
+  $('.subscribe-form').each(function () {
+    $(this).validate({
+      errorClass: 'invalid',
+      rules: {
+        email: {
+          required: true,
+          email: true
+        },
+        message: {
+          required: true,
+          minlength: 100
+        },
+        password: {
+          required: true,
+          minlength: 10
+        }
+      },
+      messages: {
+        email: {
+          required: "* Enter your email address",
+          email: "* Must be name@domain.com"
+        },
+        message: {
+          required: "* Enter your message",
+          minlength: "* More than 100 letters long"
+        },
+        password: {
+          required: "* Enter password",
+          minlength: "* More than 10 letters long"
+        }
+      },
+    });
+  });
 });

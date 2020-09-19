@@ -49,4 +49,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: subscription.html');
+header('Location: subscribe.html');

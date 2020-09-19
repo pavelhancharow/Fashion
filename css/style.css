@@ -50,6 +50,15 @@ body {
   max-width: 1140px;
 }
 
+.invalid {
+  position: absolute;
+  left: 10px;
+  bottom: -15px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFB2B2;
+}
+
 .header {
   padding: 27px 0;
   position: fixed;
@@ -927,30 +936,59 @@ body {
   border-radius: 8px;
   overflow: hidden;
   outline: none;
+  text-overflow: ellipsis;
 }
 
 .subscribe-input__email::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 22px;
   color: #959EAD;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .subscribe-input__email:-ms-input-placeholder {
   font-size: 16px;
   line-height: 22px;
   color: #959EAD;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .subscribe-input__email::-ms-input-placeholder {
   font-size: 16px;
   line-height: 22px;
   color: #959EAD;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .subscribe-input__email::placeholder {
   font-size: 16px;
   line-height: 22px;
   color: #959EAD;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.subscribe-input__email:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.subscribe-input__email:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.subscribe-input__email:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.subscribe-input__email:focus::placeholder {
+  opacity: 0;
 }
 
 .footer {
@@ -2136,6 +2174,10 @@ body {
   .subscribe-input__email:placeholder {
     font-size: 16px;
     line-height: 22px;
+  }
+  .invalid {
+    bottom: 0px;
+    color: #FF4040;
   }
   .footer {
     padding-top: 16px;

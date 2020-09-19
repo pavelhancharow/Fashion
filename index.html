@@ -122,13 +122,13 @@
         <div class="trending-header">
           <h3 class="trending-header__title">Trending Items</h3>
           <ul class="trending-header__list">
-            <li class="trending-header__item trending-header__item_active">New Arrival</li>
-            <li class="trending-header__item">Best Sellers</li>
-            <li class="trending-header__item">Upcoming</li>
+            <li class="trending-header__item trending-header__item_active" data-target="#new">New Arrival</li>
+            <li class="trending-header__item" data-target="#best">Best Sellers</li>
+            <li class="trending-header__item" data-target="#upcoming">Upcoming</li>
           </ul>
         </div>
         <!-- /.trending-header -->
-        <div class="trending-block">
+        <div class="trending-block trending-block__visible" id="new">
           <div class="trending-card">
             <img src="img/trending/image.jpg" alt="image: model Minimalist Style" class="trending-card__img">
             <div class="trending-description">
@@ -204,6 +204,92 @@
             <h3 class="trending-more__title">See More Collection</h3>
           </div>
           <!-- /.trending-more -->
+        </div>
+        <!-- /.trending-block -->
+        <div class="trending-block" id="best">
+          <div class="trending-card">
+            <img src="img/trending/image-3.jpg" alt="image: model Swaggie Shaggy" class="trending-card__img">
+            <div class="trending-description">
+              <strong class="trending-description__title">Swaggie Shaggy</strong>
+              <span class="trending-description__price">$81.3
+                <img src="img/svg/shopping-cart.svg" alt="icon: shopping cart" class="trending-description__price_img">
+              </span>
+            </div>
+          </div>
+          <!-- /.trending-card -->
+          <div class="trending-card">
+            <img src="img/trending/image-6.jpg" alt="image: model Pinky Winky" class="trending-card__img">
+            <div class="trending-description">
+              <strong class="trending-description__title">Pinky Winky</strong>
+              <span class="trending-description__price">$109
+                <img src="img/svg/shopping-cart.svg" alt="icon: shopping cart" class="trending-description__price_img">
+              </span>
+            </div>
+          </div>
+          <!-- /.trending-card -->
+          <div class="trending-card">
+            <img src="img/trending/image-4.jpg" alt="image: model Full Goloristy" class="trending-card__img">
+            <div class="trending-description">
+              <strong class="trending-description__title">Full Coloristy</strong>
+              <span class="trending-description__price">$25.7
+                <img src="img/svg/shopping-cart.svg" alt="icon: shopping cart" class="trending-description__price_img">
+              </span>
+            </div>
+          </div>
+          <!-- /.trending-card -->
+          <div class="trending-card">
+            <img src="img/trending/image-1.jpg" alt="image: model Holiday Vibes" class="trending-card__img">
+            <div class="trending-description">
+              <strong class="trending-description__title">Holiday Vibes</strong>
+              <span class="trending-description__price">$51.2
+                <img src="img/svg/shopping-cart.svg" alt="icon: shopping cart" class="trending-description__price_img">
+              </span>
+            </div>
+          </div>
+          <!-- /.trending-card -->
+        </div>
+        <!-- /.trending-block__best -->
+        <div class="trending-block" id="upcoming">
+          <div class="trending-card">
+            <img src="img/trending/image.jpg" alt="image: model Minimalist Style" class="trending-card__img">
+            <div class="trending-description">
+              <strong class="trending-description__title">Minimalist Style</strong>
+              <span class="trending-description__price">$25.7
+                <img src="img/svg/shopping-cart.svg" alt="icon: shopping cart" class="trending-description__price_img">
+              </span>
+            </div>
+          </div>
+          <!-- /.trending-card -->
+          <div class="trending-card">
+            <img src="img/trending/image-2.jpg" alt="image: model Luxury Gown" class="trending-card__img">
+            <div class="trending-description">
+              <strong class="trending-description__title">Luxury Gown</strong>
+              <span class="trending-description__price">$30.6
+                <img src="img/svg/shopping-cart.svg" alt="icon: shopping cart" class="trending-description__price_img">
+              </span>
+            </div>
+          </div>
+          <!-- /.trending-card -->
+          <div class="trending-card">
+            <img src="img/trending/image-6.jpg" alt="image: model Pinky Winky" class="trending-card__img">
+            <div class="trending-description">
+              <strong class="trending-description__title">Pinky Winky</strong>
+              <span class="trending-description__price">$109
+                <img src="img/svg/shopping-cart.svg" alt="icon: shopping cart" class="trending-description__price_img">
+              </span>
+            </div>
+          </div>
+          <!-- /.trending-card -->
+          <div class="trending-card">
+            <img src="img/trending/image-5.jpg" alt="image: model Red Formal" class="trending-card__img">
+            <div class="trending-description">
+              <strong class="trending-description__title">Red Formal</strong>
+              <span class="trending-description__price">$66.8
+                <img src="img/svg/shopping-cart.svg" alt="icon: shopping cart" class="trending-description__price_img">
+              </span>
+            </div>
+          </div>
+          <!-- /.trending-card -->
         </div>
         <!-- /.trending-block -->
       </div>
@@ -390,7 +476,7 @@
               the updates about fashion & styles from us.</p>
           </div>
           <!-- /.subscribe-info -->
-          <form action="#" class="subscribe-form">
+          <form action="send.php" method="POST" class="subscribe-form">
             <div class="subscribe-input">
               <input type="email" class="subscribe-input__email" placeholder="Your Email" required>
             </div>
